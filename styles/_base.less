@@ -1,0 +1,67 @@
+// Breakpoints
+
+@tablet:        768px;
+@mobile:        767px;
+
+.OnMobile(@rules) { @media screen and (max-width:@mobile){ @rules(); } };
+.OnDesktop(@rules) { @media screen and (min-width: @tablet){ @rules(); } };
+
+// Variables
+
+@color-light-gray1: #e1e1e1;
+@color-light-gray2: #e2e2e2;
+
+// Mixins
+
+#flex() {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+#flexwrap(@value: wrap) {
+    -webkit-flex-wrap: @value;
+    flex-wrap: @value;
+}
+
+#flexbasis(@basis: auto) {
+    -webkit-flex-basis: @basis;
+    flex-basis: @basis;
+}
+
+#flexgrow(@grow: auto) {
+    -webkit-flex-grow: @grow;
+    flex-grow: @grow;
+}
+
+#flexorder(@order: 1) {
+    -ms-flex-order: @order;
+    -webkit-order: @order;
+    order: @order;
+}
+
+#flex-direction(@value: column) {
+    -webkit-flex-direction: @value;
+    -ms-flex-direction: @value;
+    flex-direction: @value;
+}
+
+#justify-content(@justify) {
+    -webkit-justify-content: @justify;
+    -moz-justify-content: @justify;
+    -ms-justify-content: @justify;
+    justify-content: @justify;
+    -ms-flex-pack: @justify;
+}
+
+#align-content(@align) {
+    -webkit-align-content: @align;
+    -moz-align-content: @align;
+    -ms-align-content: @align;
+    align-content: @align;
+}
+
+#flexshrink(@shrink: 1) {
+    -webkit-flex-shrink: @shrink;
+    flex-shrink: @shrink;
+}
