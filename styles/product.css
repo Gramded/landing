@@ -1,0 +1,71 @@
+@import "libs/reset.css";
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+.btn {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .btn {
+    margin: auto;
+    max-width: 400px;
+    display: block;
+  }
+}
+.btn-primary {
+  min-height: 67px;
+  line-height: 67px;
+  border: 1px solid transparent;
+  box-shadow: 0 2px 15px rgba(63, 64, 65, 0.21);
+  border-radius: 5px;
+  font-size: 24px;
+  color: #000;
+  background: #fff;
+}
+@media screen and (min-width: 768px) {
+  .btn-primary {
+    min-width: 335px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .btn-primary {
+    width: 100%;
+  }
+}
+.btn-primary:hover {
+  border: 1px solid #0c8eff;
+  color: #0c8eff;
+}
+.btn-secondary {
+  min-height: 53px;
+  background: #7ed321;
+  color: #fff;
+  line-height: 53px;
+  border-radius: 46px;
+  font-size: 18px;
+}
+@media screen and (min-width: 768px) {
+  .btn-secondary {
+    min-width: 207px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .btn-secondary {
+    width: 100%;
+  }
+}
+.btn-secondary:hover {
+  background: #68bb0e;
+}
+.content-width {
+  margin: auto;
+  padding: 0 20px;
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+/*# sourceMappingURL=product.css.map */
