@@ -26,10 +26,12 @@ body {
   font-size: 24px;
   color: #000;
   background: #fff;
+  margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
   .btn-primary {
     min-width: 335px;
+    max-width: 400px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -89,5 +91,87 @@ body {
 }
 .banner-wrapper .slick-slide {
   margin: 0 20px;
+}
+.extensions {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.extensions .extensions-heading {
+  font: 400 36px Montserrat;
+  text-align: center;
+  margin: 90px auto 50px;
+}
+.extensions .extensions-carousel {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: space-around;
+  margin-bottom: 65px;
+}
+.extensions .extensions-carousel .extensions-carousel-lot__red {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 250px;
+  height: 300px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #ff4d4d;
+}
+.extensions .extensions-carousel .extensions-carousel-lot__blue {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 250px;
+  height: 300px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #1d72f1;
+}
+.extensions .extensions-carousel .extensions-carousel-lot__green {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 250px;
+  height: 300px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #21d383;
+}
+.extensions .extensions-carousel .extensions-carousel-lot__yellow {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 250px;
+  height: 300px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #ffca00;
+}
+.extensions .extensions-carousel .extensions-carousel-lot-img {
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+}
+.extensions .extensions-carousel .lot-text {
+  display: block;
+  width: 250px;
+  height: 60px;
+  font: 400 22px Montserrat;
+}
+.extensions .extensions-carousel .lot-text__17 {
+  display: block;
+  width: 250px;
+  height: 60px;
+  font: 400 17px Montserrat;
 }
 /*# sourceMappingURL=category.css.map */
