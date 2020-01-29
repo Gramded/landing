@@ -1,5 +1,11 @@
+$(function () {
+
+    $(".rateyo").rateYo({});
+
+});
 (function () {
     const $ = jQuery;
+
 
     $( document ).ready(function() {
         $('[data-role="mobile-slider"]').slick({
@@ -49,5 +55,6 @@
             ]
         });
     });
+})
 
-})();
+();

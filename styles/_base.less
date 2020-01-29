@@ -21,7 +21,9 @@
 // Variables
 
 @content-width: 1200px;
+@font-p16: 400 16px Montserrat;
 @font-h2: 400 36px Montserrat;
+@font-h3: bold 36px Montserrat;
 
 // Colors
 
@@ -114,7 +116,14 @@
     height: 300px;
     border-radius: 5px;
     text-align: center;
+    color: #fff;
+    text-decoration: none;
     background-color: @color;
+
+    .OnMobile({
+    width: 20%;
+    })
+
 }
 
 #mont-text (@size: 20px) {

@@ -7,6 +7,9 @@
     <link rel="stylesheet" type="text/css" href="./styles/libs/slick.css">
     <link rel="stylesheet" type="text/css" href="./styles/libs/slick-theme.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/libs/jquery.rateyo.min.css"/>
+    <script defer type="text/javascript" src="./js/libs/jquery.min.js"></script>
+    <script defer type="text/javascript" src="./js/libs/jquery.rateyo.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="./js/libs/slick.min.js"></script>
     <script type="text/javascript" src="./js/category.js"></script>
@@ -14,6 +17,34 @@
 <body>
 <main>
 <div class="banner-wrapper">
+    <header class="header-block">
+        <div class="header-logo">
+            <img src="./images/clients/aitoc.svg" alt="Aitoc">
+        </div>
+        <nav class="header-menu">
+            <a class="header-menu-punkt" href="#">Agency</a>
+            <a class="header-menu-punkt" href="#">Extension</a>
+            <a class="header-menu-punkt" href="#">Services</a>
+            <a class="header-menu-punkt" href="#">About Us</a>
+            <a class="header-menu-punkt" href="#">Blog</a>
+            <a class="header-menu-punkt__green" href="#">Get a Quote</a>
+        </nav>
+        <div></div>
+        <div class="header-activ">
+            <div class="header-activ-item">
+                <img src="./images/clients/magnifiying.svg" alt="suchen">
+            </div>
+            <div class="header-activ-item">
+               <img src="./images/clients/cart.svg" alt="cart">
+            </div>
+            <div class="header-activ-item">
+               <button type="button"  class="btn header-logform-btn">Login</button>
+            </div>
+            <div class="header-activ-item">
+                <button type="button" class="btn header-logform-btn">Sing Up</button>
+            </div>
+        </div>
+    </header>
     <div class="content-width">
         <h1>
             Solution provider for E-commerce businesses
@@ -41,10 +72,10 @@
         </div>
     </div>
     <div class="who-we-block">
-        <h3>
+        <h3 class="who-we-block_h3">
             Who we are?
         </h3>
-        <div class="text">
+        <div class="who-we-block_text">
             It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
             t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
         </div>
@@ -54,22 +85,26 @@
 <div class="extensions">
     <h2 class="extensions-heading">Magento 1 Extensions</h2>
     <div class="extensions-carousel">
-        <a class="extensions-carousel-lot__red">
+        <a href="#" class="extensions-carousel-lot__red">
             <img class="extensions-carousel-lot-img" src="./images/clients/glasses.svg" alt="oh... We have problem with image">
             <p class="lot-text__17">Visualize Your Attributes <br>
                 Color Swatch</p>
+            <div class="carousel-lot-star">
+                <div class="rateyo"></div>
+                <button type="button" class="carousel-lot-btn">$ 1099</button>
+            </div>
         </a>
-        <a class="extensions-carousel-lot__blue">
+        <a href="#" class="extensions-carousel-lot__blue">
             <img class="extensions-carousel-lot-img" src="./images/clients/shield.svg" alt="oh... We have problem with image">
             <p class="lot-text">Advanced <br>
                 Permissions</p>
         </a>
-        <a class="extensions-carousel-lot__green">
+        <a href="#" class="extensions-carousel-lot__green">
             <img class="extensions-carousel-lot-img" src="./images/clients/triangle.svg" alt="oh... We have problem with image">
             <p class="lot-text">Layered <br>
                 Navigation Pro</p>
         </a>
-        <a class="extensions-carousel-lot__yellow">
+        <a href="#" class="extensions-carousel-lot__yellow">
             <img class="extensions-carousel-lot-img" src="./images/clients/oval.svg" alt="oh... We have problem with image">
             <p class="lot-text">Configurable <br>
                 Products Pro</p>
@@ -86,5 +121,6 @@
         </a>
     </div>
 </main>
+
 </body>
 </html>
