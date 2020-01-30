@@ -11,22 +11,31 @@
   var BASICSTAR = "<?xml version=\"1.0\" encoding=\"utf-8\"?>"+
                   "<svg version=\"1.1\""+
                         "xmlns=\"http://www.w3.org/2000/svg\""+
-                        "viewBox=\"0 12.705 512 486.59\""+
-                        "x=\"0px\" y=\"0px\""+
+                        " viewBox=\"0 0 24 24\""+
+                        "width=\"24\" height=\"24\""+
                         "xml:space=\"preserve\">"+
-                    "<polygon "+
-                              "points=\"256.814,12.705 317.205,198.566"+
-                                      " 512.631,198.566 354.529,313.435 "+
-                                      "414.918,499.295 256.814,384.427 "+
-                                      "98.713,499.295 159.102,313.435 "+
-                                      "1,198.566 196.426,198.566 \"/>"+
-                  "</svg>";
+
+                    // "<polygon "+
+                    //           "points=\"256.814,12.705 317.205,198.566"+
+                    //                   " 512.631,198.566 354.529,313.435 "+
+                    //                   "414.918,499.295 256.814,384.427 "+
+                    //                   "98.713,499.295 159.102,313.435 "+
+                    //                   "1,198.566 196.426,198.566 \" stroke-linejoin=\"round\" />"+
+
+                        "<path "+
+                        "d=\"M12 6.76l1.379 4.246h4.465l-3.612 2.625 1.379"+
+                        " 4.246-3.611-2.625-3.612 2.625"+
+                        " 1.379-4.246-3.612-2.625h4.465l1.38-4.246zm0-6.472l-2.833"+
+                        " 8.718h-9.167l7.416 5.389-2.833 8.718 7.417-5.388"+
+                        " 7.416 5.388-2.833-8.718"+
+                        " 7.417-5.389h-9.167l-2.833-8.718z\"></path>"+
+                                    "</svg>";
 
   // The Default values of different options available in the Plugin
   var DEFAULTS = {
 
-    starWidth : "28px",
-    normalFill: "#ff4d4d",
+    starWidth : "24px",
+    normalFill: "red",
     ratedFill : "#fff",
     numStars  : 5,
     maxValue  : 5,
@@ -350,7 +359,10 @@
 
       var $svgs = (options.rtl ? $ratedGroup : $normalGroup).find("svg");
 
-      $svgs.attr({fill: options.normalFill});
+      $svgs.attr({fill: options.normalFill,
+          stroke: "white",
+
+      });
 
       return $node;
     }

@@ -111,11 +111,34 @@ body {
 .header-block .header-activ .header-activ-item {
   margin-right: 25px;
 }
+.header-block .header-activ .cart {
+  margin-right: 0;
+}
+.header-block .header-activ .cart:after {
+  content: "3";
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  color: #fff;
+  background-color: #ff4d4d;
+  font: 400 16px Montserrat;
+  top: -10px;
+  left: -10px;
+}
 .header-block .header-activ .header-logform-btn {
   font: 400 16px Montserrat;
+  height: 100%;
+  border-radius: 5px;
   border: none;
   color: #fff;
   background: none;
+}
+.header-block .header-activ .header-logform-btn:hover,
+.header-block .header-activ .header-logform-btn:active {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 .banner-wrapper {
   padding: 20px 0 0;

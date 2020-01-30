@@ -1,6 +1,8 @@
 $(function () {
 
-    $(".rateyo").rateYo({});
+    $(".rateyo").rateYo({
+
+    });
 
 });
 (function () {

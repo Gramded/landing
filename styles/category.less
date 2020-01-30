@@ -17,12 +17,12 @@
             padding-top: 7px;
             width: 100px;
             text-align: center;
-            color: #fff;
+            color: @color-white;
             text-decoration: none;
         }
         .header-menu-punkt__green {
             width: 130px;
-            background-color: #7ed321;
+            background-color: @button-secondary-background-color;
             border-radius: 25px;
         }
     }
@@ -30,20 +30,41 @@
     .header-activ {
         #flex;
         font: @font-p16;
-        color: #fff;
+        color: @color-white;
         .header-activ-item {
             margin-right: 25px;
         }
+        .cart {
+            margin-right: 0;
+
+            &:after {
+                content: "3";
+                display: inline-block;
+                text-align: center;
+                position: relative;
+                width: 20px;
+                height: 20px;
+                border-radius: 50px;
+                color: @color-white;
+                background-color: @color-red;
+                font: @font-p16;
+                top: -10px;
+                left: -10px;
+            }
+        }
+
 
         .header-logform-btn {
             font: @font-p16;
+            height: 100%;
+            border-radius: 5px;
             border: none;
-            color: #fff;
+            color: @color-white;
             background: none;
 
             &:hover,
             &:active {
-
+                background-color:  rgba(256, 256, 256, 0.2);;
             }
         }
 
@@ -80,7 +101,7 @@
     .who-we-block {
         width: 50%;
         margin: 110px auto 0;
-        background-color: #fff;
+        background-color: @color-white;
         border-radius: 5px;
         .who-we-block_h3 {
             font: @font-h3;
@@ -113,7 +134,7 @@
         margin-bottom: 65px;
 
         .extensions-carousel-lot__red {
-            #extensions-carousel-lot(#ff4d4d);
+            #extensions-carousel-lot(@color-red);
         }
         .extensions-carousel-lot__blue {
             #extensions-carousel-lot(#1d72f1);
@@ -153,10 +174,10 @@
 
         .carousel-lot-btn {
             font: @font-p16;
-            color: #ff4d4d;
+            color: @color-red;
             border: none;
             border-radius: 5px;
-            background-color: #fff;
+            background-color: @color-white;
         }
 
         .OnMobile({
