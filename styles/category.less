@@ -170,6 +170,11 @@
         .carousel-lot-star {
             #flex;
             #justify-content(space-around);
+
+            .lot-place-dis {
+                font: @font-p14;
+                text-align: justify-all;
+            }
         }
 
         .carousel-lot-btn {
@@ -185,4 +190,52 @@
         });
     }
 
+}
+
+.why-aitoc {
+    #flex;
+    #flex-direction(column);
+    margin-top: 80px;
+    margin-bottom: 50px;
+
+    .why-h2 {
+        text-align: center;
+        font: @font-h2;
+        margin-bottom: 70px;
+    }
+
+    .why-item-place {
+        #flex;
+        #justify-content(space-around);
+        margin: 0 15%;
+    }
+
+    .why-item {
+        #flex;
+        #flex-direction(column);
+        width: 185px;
+
+        .why-item-img__1 {
+            #why-item-img( url(../images/clients/why_img_1.svg) );
+        }
+        .why-item-img__2 {
+            #why-item-img( url(../images/clients/why_img_2.svg) );
+        }
+        .why-item-img__3 {
+            #why-item-img( url(../images/clients/why_img_3.svg) );
+        }
+        .why-item-img__4 {
+            #why-item-img( url(../images/clients/why_img_4.svg) );
+        }
+
+        .why-item-h2 {
+            text-align: center;
+            font: @font-h2;
+        }
+
+        .why-item-dis {
+            text-align: center;
+            font: @font-p16;
+        }
+    }
 }

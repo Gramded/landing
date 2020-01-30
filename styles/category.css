@@ -301,6 +301,10 @@ body {
   justify-content: space-around;
   -ms-flex-pack: space-around;
 }
+.extensions .extensions-carousel .carousel-lot-star .lot-place-dis {
+  font: 400 16px Montserrat;
+  text-align: justify-all;
+}
 .extensions .extensions-carousel .carousel-lot-btn {
   font: 400 16px Montserrat;
   color: #ff4d4d;
@@ -314,5 +318,92 @@ body {
     -ms-flex-direction: colum;
     flex-direction: colum;
   }
+}
+.why-aitoc {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+.why-aitoc .why-h2 {
+  text-align: center;
+  font: 400 36px Montserrat;
+  margin-bottom: 70px;
+}
+.why-aitoc .why-item-place {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: space-around;
+  margin: 0 15%;
+}
+.why-aitoc .why-item {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 185px;
+}
+.why-aitoc .why-item .why-item-img__1 {
+  width: 135px;
+  height: 135px;
+  margin: 0 auto;
+  border-radius: 50px;
+  box-shadow: #cccccc;
+  background-image: url(../images/clients/why_img_1.svg);
+  background-size: 80px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.why-aitoc .why-item .why-item-img__2 {
+  width: 135px;
+  height: 135px;
+  margin: 0 auto;
+  border-radius: 50px;
+  box-shadow: #cccccc;
+  background-image: url(../images/clients/why_img_2.svg);
+  background-size: 80px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.why-aitoc .why-item .why-item-img__3 {
+  width: 135px;
+  height: 135px;
+  margin: 0 auto;
+  border-radius: 50px;
+  box-shadow: #cccccc;
+  background-image: url(../images/clients/why_img_3.svg);
+  background-size: 80px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.why-aitoc .why-item .why-item-img__4 {
+  width: 135px;
+  height: 135px;
+  margin: 0 auto;
+  border-radius: 50px;
+  box-shadow: #cccccc;
+  background-image: url(../images/clients/why_img_4.svg);
+  background-size: 80px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.why-aitoc .why-item .why-item-h2 {
+  text-align: center;
+  font: 400 36px Montserrat;
+}
+.why-aitoc .why-item .why-item-dis {
+  text-align: center;
+  font: 400 16px Montserrat;
 }
 /*# sourceMappingURL=category.css.map */
