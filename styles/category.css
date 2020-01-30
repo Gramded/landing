@@ -358,8 +358,8 @@ body {
   width: 135px;
   height: 135px;
   margin: 0 auto;
-  border-radius: 50px;
-  box-shadow: #cccccc;
+  border-radius: 100px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
   background-image: url(../images/clients/why_img_1.svg);
   background-size: 80px;
   background-repeat: no-repeat;
@@ -369,8 +369,8 @@ body {
   width: 135px;
   height: 135px;
   margin: 0 auto;
-  border-radius: 50px;
-  box-shadow: #cccccc;
+  border-radius: 100px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
   background-image: url(../images/clients/why_img_2.svg);
   background-size: 80px;
   background-repeat: no-repeat;
@@ -380,8 +380,8 @@ body {
   width: 135px;
   height: 135px;
   margin: 0 auto;
-  border-radius: 50px;
-  box-shadow: #cccccc;
+  border-radius: 100px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
   background-image: url(../images/clients/why_img_3.svg);
   background-size: 80px;
   background-repeat: no-repeat;
@@ -391,8 +391,8 @@ body {
   width: 135px;
   height: 135px;
   margin: 0 auto;
-  border-radius: 50px;
-  box-shadow: #cccccc;
+  border-radius: 100px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
   background-image: url(../images/clients/why_img_4.svg);
   background-size: 80px;
   background-repeat: no-repeat;
