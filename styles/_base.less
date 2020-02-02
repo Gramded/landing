@@ -21,6 +21,10 @@
 // Variables
 
 @content-width: 1200px;
+@font-p16: 400 16px Montserrat;
+@font-p14: 400 16px Montserrat;
+@font-h2: 400 36px Montserrat;
+@font-h3: bold 36px Montserrat;
 
 // Colors
 
@@ -28,7 +32,7 @@
 @color-white: #fff;
 @font-family-base: 'Montserrat', sans-serif;
 @color-active-state: #0c8eff;
-
+@color-red: #ff4d4d;
 // Buttons
 
 @button-box-shadow: 0 2px 15px rgba(63, 64, 65, 0.21);
@@ -105,6 +109,41 @@
     transition: all .4s ease;
 }
 
+#extensions-carousel-lot (@color) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 250px;
+    height: 300px;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    background-color: @color;
+
+    .OnMobile({
+    width: 20%;
+    })
+
+}
+
+#mont-text (@size: 20px) {
+    font: 400 @size Montserrat;
+}
+
+#why-item-img (@img-url) {
+        width: 135px;
+        height: 135px;
+        margin: 0 auto;
+        border-radius: 100px;
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+        background-image: @img-url;
+        background-size: 80px;
+        background-repeat: no-repeat;
+        background-position: center;
+
+}
+
 // Styles
 
 body {
@@ -133,9 +172,11 @@ body {
     font-size: 24px;
     color: @color-black;
     background: @color-white;
+    margin: 0 auto;
 
     .OnDesktop({
         min-width: @button-min-width;
+        max-width: @button-max-width;
     });
 
     .OnMobile({
