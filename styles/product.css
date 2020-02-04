@@ -70,4 +70,242 @@ body {
   max-width: 1200px;
   box-sizing: border-box;
 }
+.header-block {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: space-between;
+  padding: 0 75px;
+}
+.header-block .header-menu {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header-block .header-menu .header-menu-punkt,
+.header-block .header-menu .header-menu-punkt__green {
+  display: block;
+  padding-top: 7px;
+  width: 100px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+.header-block .header-menu .header-menu-punkt__green {
+  width: 130px;
+  background-color: #7ed321;
+  border-radius: 25px;
+}
+.header-block .header-activ {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font: 400 16px Montserrat;
+  color: #fff;
+}
+.header-block .header-activ .header-activ-item {
+  margin-right: 25px;
+}
+.header-block .header-activ .cart {
+  margin-right: 0;
+}
+.header-block .header-activ .cart:after {
+  content: "3";
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  color: #fff;
+  background-color: #ff4d4d;
+  font: 400 16px Montserrat;
+  top: -10px;
+  left: -10px;
+}
+.header-block .header-activ .header-logform-btn {
+  font: 400 16px Montserrat;
+  height: 100%;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  background: none;
+}
+.header-block .header-activ .header-logform-btn:hover,
+.header-block .header-activ .header-logform-btn:active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.banner-wrapper {
+  padding: 0;
+  background-color: #725dec;
+}
+.banner-wrapper .header-block {
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.banner-wrapper .header-block > div,
+.banner-wrapper .header-block > nav {
+  margin: auto;
+}
+.banner-wrapper .product {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1000px;
+  margin: 70px auto 70px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.banner-wrapper .product .product-rating {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.banner-wrapper .product .product-rating .product-rating-img {
+  width: 135px;
+  height: 135px;
+  margin: 50px 35px 35px;
+}
+.banner-wrapper .product .product-rating .product-rating-stars {
+  margin: 0 auto 10px;
+}
+.banner-wrapper .product .product-rating .product-rating-dis {
+  text-align: center;
+  color: #fff;
+  font: 400 16px Montserrat;
+}
+.banner-wrapper .product .product-rating .product-rating-dis .product-rating-reviews {
+  text-decoration: underline;
+}
+.banner-wrapper .product .product-dis {
+  width: 470px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 0 0 180px 40px;
+}
+.banner-wrapper .product .product-dis .product-dis-name {
+  width: max-content;
+  margin: 60px 0 35px;
+  font: 400 36px Montserrat;
+}
+.banner-wrapper .product .product-dis .product-dis-items {
+  width: max-content;
+  font: 400 16px Montserrat;
+}
+.banner-wrapper .product .product-dis .product-dis-items li:before {
+  content: '\26AB';
+  font-size: 5px;
+  line-height: 16px;
+  padding-right: 5px;
+  vertical-align: text-top;
+}
+.banner-wrapper .product .product-buy {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: space-between;
+  width: 300px;
+  padding: 40px 35px 20px 45px;
+  background-color: #fff;
+  box-shadow: inset 0px 8px 20px rgba(63, 64, 65, 0.21);
+}
+.banner-wrapper .product .product-buy .product-buy-item {
+  font: 400 18px Montserrat;
+  line-height: 26px;
+}
+.banner-wrapper .product .product-buy .product-buy-item .buy-free-icon {
+  margin-right: 35px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #725dec;
+  border-radius: 50px;
+  padding: 3px 10px;
+}
+.banner-wrapper .product .product-buy .product-buy-item .buy-reviews-num {
+  display: inline-block;
+  width: 82px;
+  color: #725dec;
+}
+.banner-wrapper .product .product-buy .product-buy-item .buy-point-checkbox {
+  width: 25px;
+  height: 25px;
+  margin-left: 15px;
+  margin-right: 40px;
+  visibility: hidden;
+}
+.banner-wrapper .product .product-buy .product-buy-item .buy-point-checkbox:after {
+  content: "";
+  display: block;
+  position: relative;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #7de321;
+  border-radius: 5px;
+  font-size: 25px;
+  line-height: 25px;
+  text-align: center;
+  visibility: visible;
+}
+.banner-wrapper .product .product-buy .product-buy-item .buy-point-checkbox:checked:after {
+  content: "\2714";
+  color: #7de321;
+  display: block;
+  position: relative;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #7de321;
+  border-radius: 5px;
+  font-size: 25px;
+  line-height: 25px;
+  text-align: center;
+  visibility: visible;
+}
+.banner-wrapper .product .product-buy .product-buy-month {
+  position: relative;
+  left: -20px;
+  width: 105%;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0 8px 20px rgba(63, 64, 65, 0.21);
+  background-color: #fff;
+}
+.banner-wrapper .product .product-buy .product-buy-month .product-buy-item .buy-month-prise {
+  font: bold 36px Montserrat;
+}
+.banner-wrapper .product .product-buy .product-buy-month .buy-month-trial {
+  width: max-content;
+  margin-top: 5px;
+  padding: 0 5px;
+  border-radius: 5px;
+  background-color: #50e37b;
+  font: 400 16px Montserrat;
+}
+.banner-wrapper .screenshots {
+  width: 800px;
+  margin: 0 auto 100px;
+}
+.banner-wrapper .screenshots .screenshots-h2 {
+  text-align: center;
+  font: 400 36px Montserrat;
+  color: #fff;
+  margin-bottom: 55px;
+}
 /*# sourceMappingURL=product.css.map */

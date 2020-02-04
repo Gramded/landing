@@ -2,9 +2,115 @@
 <html lang="EN">
 <head>
     <title>Aitoc Shopify Product</title>
+    <link rel="stylesheet" type="text/css" href="../styles/libs/slick.css">
+    <link rel="stylesheet" type="text/css" href="../styles/libs/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="../styles/product.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/libs/jquery.rateyo.min.css"/>
+    <script defer type="text/javascript" src="../js/libs/jquery.min.js"></script>
+    <script defer type="text/javascript" src="../js/libs/jquery.rateyo.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../js/libs/slick.min.js"></script>
+    <script type="text/javascript" src="../js/product.js"></script>
 </head>
 <body>
-
+<main>
+    <div class="banner-wrapper">
+        <header class="header-block">
+            <div class="header-logo">
+                <img src="../images/clients/aitoc.svg" alt="Aitoc">
+            </div>
+            <nav class="header-menu">
+                <a class="header-menu-punkt" href="#">Agency</a>
+                <a class="header-menu-punkt" href="#">Extension</a>
+                <a class="header-menu-punkt" href="#">Services</a>
+                <a class="header-menu-punkt" href="#">About Us</a>
+                <a class="header-menu-punkt" href="#">Blog</a>
+                <a class="header-menu-punkt__green" href="#">Get a Quote</a>
+            </nav>
+            <div></div>
+            <div class="header-activ">
+                <div class="header-activ-item">
+                    <a href="#">
+                        <img src="../images/clients/magnifiying.svg" alt="suchen">
+                    </a>
+                </div>
+                <div class="header-activ-item cart">
+                    <a href="#">
+                        <img src="../images/clients/cart.svg" alt="cart">
+                    </a>
+                </div>
+                <div class="header-activ-item">
+                    <button type="button"  class="btn header-logform-btn">Login</button>
+                </div>
+                <div class="header-activ-item">
+                    <button type="button" class="btn header-logform-btn">Sing Up</button>
+                </div>
+            </div>
+        </header>
+        <div class="product">
+            <div class="product-rating">
+                <img class="product-rating-img" src="../images/clients/key.svg" alt="hear is a key">
+                <div class="rateyo product-rating-stars"></div>
+                <p class="product-rating-dis">Based on <a class="product-rating-reviews">983 reviews</a></p>
+            </div>
+            <div class="product-dis">
+                <h1 class="product-dis-name">Layered <br>
+                    Navigation Pro</h1>
+                <ul class="product-dis-items">
+                    <li>Adding extra authentication step</li>
+                    <li>Enabling time-based authentication</li>
+                    <li>Producing one-time passwords with mobile app</li>
+                    <li>Imposing IP restrictions</li>
+                    <li>Email delivery of one-time passwords</li>
+                    <li>Configuring extension for different users</li>
+                </ul>
+            </div>
+            <div class="product-buy">
+                <div class="product-buy-free">
+                    <p class="product-buy-item"><span class="buy-free-icon">FREE</span> lifetime support</p>
+                    <p class="product-buy-item"><span class="buy-free-icon">FREE</span> installation</p>
+                </div>
+                <div class="product-buy-reviews">
+                    <p class="product-buy-item"><span class="buy-reviews-num">+2000</span> installations</p>
+                    <p class="product-buy-item"><span class="buy-reviews-num">+375</span> reviews on Shopify</p>
+                </div>
+                <div class="product-buy-point">
+                    <p class="product-buy-item"><input id="point_1" type="checkbox" class="buy-point-checkbox"> <label for="point_1">installations</label> </p>
+                    <p class="product-buy-item"><input id="point_2" type="checkbox" class="buy-point-checkbox" checked> <label for="point_2">reviews on Shopify</label> </p>
+                    <p class="product-buy-item"><input id="point_3" type="checkbox" class="buy-point-checkbox" checked> <label for="point_3">reviews on Shopify</label> </p>
+                </div>
+                <div class="product-buy-month">
+                    <p class="product-buy-item"><span class="buy-month-prise">$1999</span>per month</p>
+                    <p class="buy-month-trial">15-dayfree trial</p>
+                </div>
+                <button class="btn-secondary">Buy now</button>
+            </div>
+        </div>
+        <div class="screenshots">
+            <h2 class="screenshots-h2">Screenshots</h2>
+            <div class="responsive">
+                <!--screenshots-slider-->
+                <div style="width: 200px; height: 120px; background-color: #000;
+margin: 0 20px; border: 1px solid white"></div>
+                <div style="width: 200px; height: 120px; background-color: #000;
+margin: 0 20px; border: 1px solid white"></div>
+                <div style="width: 200px; height: 120px; background-color: #000;
+margin: 0 20px; border: 1px solid white"></div>
+                <div style="width: 200px; height: 120px; background-color: #000;
+margin: 0 20px; border: 1px solid white"></div>
+                <div style="width: 200px; height: 120px; background-color: #000;
+margin: 0 20px; border: 1px solid white"></div>
+                <div style="width: 200px; height: 120px; background-color: #000;
+margin: 0 20px; border: 1px solid white"></div>
+                <div style="width: 200px; height: 120px; background-color: #000;
+margin: 0 20px; border: 1px solid white"></div>
+                <div style="width: 200px; height: 120px; background-color: #000;
+margin: 0 20px; border: 1px solid white"></div>
+            </div>
+        </div>
+    </div>
+</main>
 </body>
 </html>

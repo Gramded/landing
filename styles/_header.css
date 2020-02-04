@@ -1,0 +1,142 @@
+@import "libs/reset.css";
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+.btn {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .btn {
+    margin: auto;
+    max-width: 400px;
+    display: block;
+  }
+}
+.btn-primary {
+  min-height: 67px;
+  line-height: 67px;
+  border: 1px solid transparent;
+  box-shadow: 0 2px 15px rgba(63, 64, 65, 0.21);
+  border-radius: 5px;
+  font-size: 24px;
+  color: #000;
+  background: #fff;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .btn-primary {
+    min-width: 335px;
+    max-width: 400px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .btn-primary {
+    width: 100%;
+  }
+}
+.btn-primary:hover {
+  border: 1px solid #0c8eff;
+  color: #0c8eff;
+}
+.btn-secondary {
+  min-height: 53px;
+  background: #7ed321;
+  color: #fff;
+  line-height: 53px;
+  border-radius: 46px;
+  font-size: 18px;
+}
+@media screen and (min-width: 768px) {
+  .btn-secondary {
+    min-width: 207px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .btn-secondary {
+    width: 100%;
+  }
+}
+.btn-secondary:hover {
+  background: #68bb0e;
+}
+.content-width {
+  margin: auto;
+  padding: 0 20px;
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+.header-block {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: space-between;
+  padding: 0 75px;
+}
+.header-block .header-menu {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header-block .header-menu .header-menu-punkt,
+.header-block .header-menu .header-menu-punkt__green {
+  display: block;
+  padding-top: 7px;
+  width: 100px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+.header-block .header-menu .header-menu-punkt__green {
+  width: 130px;
+  background-color: #7ed321;
+  border-radius: 25px;
+}
+.header-block .header-activ {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font: 400 16px Montserrat;
+  color: #fff;
+}
+.header-block .header-activ .header-activ-item {
+  margin-right: 25px;
+}
+.header-block .header-activ .cart {
+  margin-right: 0;
+}
+.header-block .header-activ .cart:after {
+  content: "3";
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  color: #fff;
+  background-color: #ff4d4d;
+  font: 400 16px Montserrat;
+  top: -10px;
+  left: -10px;
+}
+.header-block .header-activ .header-logform-btn {
+  font: 400 16px Montserrat;
+  height: 100%;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  background: none;
+}
+.header-block .header-activ .header-logform-btn:hover,
+.header-block .header-activ .header-logform-btn:active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+/*# sourceMappingURL=_header.css.map */
