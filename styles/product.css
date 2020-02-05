@@ -300,12 +300,158 @@ body {
 }
 .banner-wrapper .screenshots {
   width: 800px;
-  margin: 0 auto 100px;
+  margin: 0 auto;
+  padding-bottom: 60px;
 }
 .banner-wrapper .screenshots .screenshots-h2 {
   text-align: center;
   font: 400 36px Montserrat;
   color: #fff;
   margin-bottom: 55px;
+}
+.banner-wrapper .screenshots .screenshots-img {
+  width: 200px;
+  height: 120px;
+  background-color: #000;
+  margin: 0 20px;
+  border: 1px solid white;
+}
+.feature {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #f6f9fc;
+}
+.feature .feature-two,
+.feature .feature-three {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: space-between;
+  padding: 60px 100px 20px;
+}
+.feature .feature-two .feature-two-dis,
+.feature .feature-three .feature-two-dis,
+.feature .feature-two .feature-three-dis,
+.feature .feature-three .feature-three-dis {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+}
+.feature .feature-two .feature-two-dis .two-dis-h2,
+.feature .feature-three .feature-two-dis .two-dis-h2,
+.feature .feature-two .feature-three-dis .two-dis-h2,
+.feature .feature-three .feature-three-dis .two-dis-h2,
+.feature .feature-two .feature-two-dis .three-dis-h2,
+.feature .feature-three .feature-two-dis .three-dis-h2,
+.feature .feature-two .feature-three-dis .three-dis-h2,
+.feature .feature-three .feature-three-dis .three-dis-h2 {
+  font: bold 22px Montserrat;
+  margin-bottom: 20px;
+}
+.feature .feature-two .feature-two-dis .two-dis-info,
+.feature .feature-three .feature-two-dis .two-dis-info,
+.feature .feature-two .feature-three-dis .two-dis-info,
+.feature .feature-three .feature-three-dis .two-dis-info,
+.feature .feature-two .feature-two-dis .three-dis-info,
+.feature .feature-three .feature-two-dis .three-dis-info,
+.feature .feature-two .feature-three-dis .three-dis-info,
+.feature .feature-three .feature-three-dis .three-dis-info {
+  font: 400 16px Montserrat;
+  margin-bottom: 55px;
+}
+.feature .feature-two .feature-two-dis .two-dis-list,
+.feature .feature-three .feature-two-dis .two-dis-list,
+.feature .feature-two .feature-three-dis .two-dis-list,
+.feature .feature-three .feature-three-dis .two-dis-list,
+.feature .feature-two .feature-two-dis .three-dis-list,
+.feature .feature-three .feature-two-dis .three-dis-list,
+.feature .feature-two .feature-three-dis .three-dis-list,
+.feature .feature-three .feature-three-dis .three-dis-list {
+  list-style: none;
+  width: 85%;
+}
+.feature .feature-two .feature-two-dis .two-dis-list .two-dis-list-item,
+.feature .feature-three .feature-two-dis .two-dis-list .two-dis-list-item,
+.feature .feature-two .feature-three-dis .two-dis-list .two-dis-list-item,
+.feature .feature-three .feature-three-dis .two-dis-list .two-dis-list-item,
+.feature .feature-two .feature-two-dis .three-dis-list .two-dis-list-item,
+.feature .feature-three .feature-two-dis .three-dis-list .two-dis-list-item,
+.feature .feature-two .feature-three-dis .three-dis-list .two-dis-list-item,
+.feature .feature-three .feature-three-dis .three-dis-list .two-dis-list-item,
+.feature .feature-two .feature-two-dis .two-dis-list .three-dis-list-item,
+.feature .feature-three .feature-two-dis .two-dis-list .three-dis-list-item,
+.feature .feature-two .feature-three-dis .two-dis-list .three-dis-list-item,
+.feature .feature-three .feature-three-dis .two-dis-list .three-dis-list-item,
+.feature .feature-two .feature-two-dis .three-dis-list .three-dis-list-item,
+.feature .feature-three .feature-two-dis .three-dis-list .three-dis-list-item,
+.feature .feature-two .feature-three-dis .three-dis-list .three-dis-list-item,
+.feature .feature-three .feature-three-dis .three-dis-list .three-dis-list-item {
+  font: 400 16px Montserrat;
+  margin-bottom: 20px;
+  padding-left: 35px;
+}
+.feature .feature-two .feature-two-dis .two-dis-list .two-dis-list-item:before,
+.feature .feature-three .feature-two-dis .two-dis-list .two-dis-list-item:before,
+.feature .feature-two .feature-three-dis .two-dis-list .two-dis-list-item:before,
+.feature .feature-three .feature-three-dis .two-dis-list .two-dis-list-item:before,
+.feature .feature-two .feature-two-dis .three-dis-list .two-dis-list-item:before,
+.feature .feature-three .feature-two-dis .three-dis-list .two-dis-list-item:before,
+.feature .feature-two .feature-three-dis .three-dis-list .two-dis-list-item:before,
+.feature .feature-three .feature-three-dis .three-dis-list .two-dis-list-item:before,
+.feature .feature-two .feature-two-dis .two-dis-list .three-dis-list-item:before,
+.feature .feature-three .feature-two-dis .two-dis-list .three-dis-list-item:before,
+.feature .feature-two .feature-three-dis .two-dis-list .three-dis-list-item:before,
+.feature .feature-three .feature-three-dis .two-dis-list .three-dis-list-item:before,
+.feature .feature-two .feature-two-dis .three-dis-list .three-dis-list-item:before,
+.feature .feature-three .feature-two-dis .three-dis-list .three-dis-list-item:before,
+.feature .feature-two .feature-three-dis .three-dis-list .three-dis-list-item:before,
+.feature .feature-three .feature-three-dis .three-dis-list .three-dis-list-item:before {
+  position: relative;
+  left: -35px;
+  display: inline-block;
+  content: "\2714";
+  width: 16px;
+  height: 16px;
+  margin-right: -22px;
+  border: 2px solid #7de321;
+  border-radius: 100px;
+  line-height: 16px;
+  font-size: 16px;
+  text-align: center;
+  color: #7de321;
+}
+.feature .feature-two .feature-two-img,
+.feature .feature-three .feature-two-img,
+.feature .feature-two .feature-three-img,
+.feature .feature-three .feature-three-img {
+  min-width: 535px;
+  height: 400px;
+  border: 1px solid black;
+}
+.feature .feature-two .feature-three-img,
+.feature .feature-three .feature-three-img {
+  margin-right: 100px;
+}
+.feature .feature-two {
+  background-color: #fff;
+}
+.feature .feature-three {
+  margin-bottom: 70px;
+}
+.feature .feature-btn {
+  width: 60px;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=product.css.map */

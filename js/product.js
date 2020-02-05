@@ -1,5 +1,15 @@
 $(function () {
 
+    $(document).ready(function(){
+        $('#lightgallery').lightGallery({
+            selector: ".item"
+        });
+    });
+});
+
+
+$(function () {
+
     $(".rateyo").rateYo({
 
     });
@@ -47,5 +57,4 @@ $(function () {
         });
     });
 })
-
 ();

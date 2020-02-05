@@ -7,10 +7,14 @@
     <link rel="stylesheet" type="text/css" href="../styles/product.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/libs/jquery.rateyo.min.css"/>
-    <script defer type="text/javascript" src="../js/libs/jquery.min.js"></script>
+    <link href="../styles/libs/lightgallery.css" rel="stylesheet">
+    <!--<script defer type="text/javascript" src="../js/libs/jquery.min.js"></script>-->
     <script defer type="text/javascript" src="../js/libs/jquery.rateyo.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
+    <script src="../js/libs/lightgallery-all.js"></script>
+    <script src="../js/libs/jquery.mousewheel.min.js"></script>
     <script type="text/javascript" src="../js/libs/slick.min.js"></script>
     <script type="text/javascript" src="../js/product.js"></script>
 </head>
@@ -58,14 +62,14 @@
             <div class="product-dis">
                 <h1 class="product-dis-name">Layered <br>
                     Navigation Pro</h1>
-                <ul class="product-dis-items">
+                <div class="product-dis-items">
                     <li>Adding extra authentication step</li>
                     <li>Enabling time-based authentication</li>
                     <li>Producing one-time passwords with mobile app</li>
                     <li>Imposing IP restrictions</li>
                     <li>Email delivery of one-time passwords</li>
                     <li>Configuring extension for different users</li>
-                </ul>
+                </div>
             </div>
             <div class="product-buy">
                 <div class="product-buy-free">
@@ -90,27 +94,95 @@
         </div>
         <div class="screenshots">
             <h2 class="screenshots-h2">Screenshots</h2>
-            <div class="responsive">
+            <div class="responsive" id="lightgallery">
                 <!--screenshots-slider-->
-                <div style="width: 200px; height: 120px; background-color: #000;
-margin: 0 20px; border: 1px solid white"></div>
-                <div style="width: 200px; height: 120px; background-color: #000;
-margin: 0 20px; border: 1px solid white"></div>
-                <div style="width: 200px; height: 120px; background-color: #000;
-margin: 0 20px; border: 1px solid white"></div>
-                <div style="width: 200px; height: 120px; background-color: #000;
-margin: 0 20px; border: 1px solid white"></div>
-                <div style="width: 200px; height: 120px; background-color: #000;
-margin: 0 20px; border: 1px solid white"></div>
-                <div style="width: 200px; height: 120px; background-color: #000;
-margin: 0 20px; border: 1px solid white"></div>
-                <div style="width: 200px; height: 120px; background-color: #000;
-margin: 0 20px; border: 1px solid white"></div>
-                <div style="width: 200px; height: 120px; background-color: #000;
-margin: 0 20px; border: 1px solid white"></div>
+                <div class="screenshots-img">
+                    <!-- как это работает:
+                     у элемента img мы устанавливаем картинку привью
+                     у элемента a ставим class="item", он так же указывается для функции в {} как selector: ".item"
+                     дальше тег а будет выводить нам "большое" изображение
+                     -->
+                    <a class="item" href="../images/clients/test.jpg">
+                        <img  style="width: 100%" src="../images/clients/why_img_1.svg" />
+                    </a>
+                </div>
+                <div class="screenshots-img">
+                    <a class="item" href="../images/clients/test.jpg">
+                        <img  style="width: 100%" src="../images/clients/why_img_2.svg" />
+                    </a>
+                </div>
+                <div class="screenshots-img">
+                    <a class="item" href="../images/clients/test.jpg">
+                        <img  style="width: 100%" src="../images/clients/why_img_3.svg" />
+                    </a>
+                </div>
+                <div class="screenshots-img">
+                    <a class="item" href="../images/clients/test.jpg">
+                        <img  style="width: 100%" src="../images/clients/why_img_1.svg" />
+                    </a>
+                </div>
+                <div class="screenshots-img">
+                    <a class="item" href="../images/clients/test.jpg">
+                        <img  style="width: 100%" src="../images/clients/why_img_2.svg" />
+                    </a>
+                </div>
+                <div class="screenshots-img">
+                    <a class="item" href="../images/clients/test.jpg">
+                        <img  style="width: 100%" src="../images/clients/test1.jpg" />
+                    </a>
+                </div>
+                <div class="screenshots-img">
+                    <a class="item" href="../images/clients/test.jpg">
+                        <img  style="width: 100%" src="../images/clients/test1.jpg" />
+                    </a>
+                </div>
             </div>
         </div>
     </div>
+    <div style="width: auto; height: 775px; background-color: wheat">hear is video block</div>
+    <div class="feature">
+        <div class="feature-two">
+            <div class="feature-two-dis">
+                <h2 class="two-dis-h2">Feature 2</h2>
+                <p class="two-dis-info">
+                    Every customer is looking for an exclusive, individually designed product.
+                    Custom Product Designer for Magento 2 brings the idea to life!
+                </p>
+                <div class="two-dis-list">
+                    <p class="two-dis-list-item">Delete and archive order records from the orders workspace and their page views</p>
+                    <p class="two-dis-list-item">Remove orders in bdivk from the orders grid</p>
+                    <p class="two-dis-list-item">Take individual orders away from the workspace</p>
+                </div>
+            </div>
+            <div class="feature-two-img">
+
+            </div>
+        </div>
+        <div class="feature-three">
+            <div class="feature-three-img">
+
+            </div>
+            <div class="feature-three-dis">
+                <h2 class="three-dis-h2">Feature 3</h2>
+                <p class="three-dis-info">
+                    Every customer is looking for an exclusive, individually designed product.
+                    Custom Product Designer for Magento 2 brings the idea to life!
+                </p>
+                <div class="three-dis-list">
+                    <p class="three-dis-list-item">Delete and archive order records from the orders workspace and their page views</p>
+                    <p class="three-dis-list-item">Remove orders in bdivk from the orders grid</p>
+                    <p class="three-dis-list-item">Take individual orders away from the workspace</p>
+                    <p class="three-dis-list-item">Remove all order-related documents (invoices, shipments, and credit memos)</p>
+                    <p class="three-dis-list-item">Remove orders from customer accounts</p>
+                </div>
+            </div>
+        </div>
+        <button class="btn-secondary feature-btn">Get Free Trial</button>
+    </div>
 </main>
+
+
+
+
 </body>
 </html>
