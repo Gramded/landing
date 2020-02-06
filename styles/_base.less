@@ -21,9 +21,11 @@
 // Variables
 
 @content-width: 1200px;
-@font-22-b: bold 22px Montserrat;
+@font-p14: 400 14px Montserrat;
 @font-p16: 400 16px Montserrat;
-@font-p14: 400 16px Montserrat;
+@font-22:  400 22px Montserrat;
+@font-22-b: bold 22px Montserrat;
+@font-24: 400 24px Montserrat;
 @font-36: 400 36px Montserrat;
 @font-36-b: bold 36px Montserrat;
 
@@ -150,6 +152,15 @@
 
 }
 
+#user-img (@img-url) {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 30px;
+    border-radius: 100px;
+    border: 1px solid black; // @todo del
+    background-image: url(@img-url);
+}
+
 #checkbox () {
     display: block;
     position: relative;
@@ -162,6 +173,23 @@
     line-height: 25px;
     text-align: center;
     visibility: visible;
+}
+
+#free-icon {
+    margin-right: 35px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    color: @color-white;
+    background-color: @color-purple;
+    border-radius: 50px;
+    padding: 3px 10px;
+}
+
+#reviews-num {
+    display: inline-block;
+    width: 82px;
+    color: @color-purple;
 }
 // Styles
 
