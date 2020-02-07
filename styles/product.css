@@ -401,6 +401,7 @@ body {
   transition: 0.5s;
 }
 .video .video-other .video-other-item__purple:hover {
+  color: #fff;
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.25);
   transition: 0.5s;
 }
@@ -413,7 +414,7 @@ body {
   position: relative;
   left: 75%;
   top: -62px;
-  margin-top: 2px;
+  margin-top: 4px;
   width: 45px;
   height: 45px;
   text-align: center;
@@ -423,6 +424,10 @@ body {
   color: #725dec;
   border: 2px solid #725dec;
   border-radius: 40px;
+  background-color: #fff;
+}
+.video .video-other .video-other-item__purple:hover {
+  background: linear-gradient(270deg, #836EFF 13.04%, #B694FF 100%);
 }
 .video .video-other .video-other-item__orange {
   display: block;
@@ -440,6 +445,7 @@ body {
   margin: 0 10%;
 }
 .video .video-other .video-other-item__orange:hover {
+  color: #fff;
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.25);
   transition: 0.5s;
 }
@@ -452,7 +458,7 @@ body {
   position: relative;
   left: 75%;
   top: -62px;
-  margin-top: 2px;
+  margin-top: 4px;
   width: 45px;
   height: 45px;
   text-align: center;
@@ -462,6 +468,10 @@ body {
   color: #ff9417;
   border: 2px solid #ff9417;
   border-radius: 40px;
+  background-color: #fff;
+}
+.video .video-other .video-other-item__orange:hover {
+  background: linear-gradient(270.52deg, #FF9417 0.98%, #FCCF32 99.95%);
 }
 .video .video-other .video-other-item__pink {
   display: block;
@@ -478,6 +488,7 @@ body {
   transition: 0.5s;
 }
 .video .video-other .video-other-item__pink:hover {
+  color: #fff;
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.25);
   transition: 0.5s;
 }
@@ -490,7 +501,7 @@ body {
   position: relative;
   left: 75%;
   top: -62px;
-  margin-top: 2px;
+  margin-top: 4px;
   width: 45px;
   height: 45px;
   text-align: center;
@@ -500,6 +511,10 @@ body {
   color: #ff5fac;
   border: 2px solid #ff5fac;
   border-radius: 40px;
+  background-color: #fff;
+}
+.video .video-other .video-other-item__pink:hover {
+  background: linear-gradient(270.57deg, #FF5FAC -4.88%, #FFA9A9 104.08%);
 }
 .feature {
   display: -webkit-flex;
