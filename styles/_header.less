@@ -3,18 +3,24 @@
 .header-block {
   #flex;
   #justify-content(space-between);
-  padding: 0 75px;
+  padding: 0 50px;
   .header-menu {
     #flex;
 
     .header-menu-punkt,
     .header-menu-punkt__green {
       display: block;
-      padding-top: 7px;
+      line-height: 23px;
       width: 100px;
       text-align: center;
       color: @color-white;
       text-decoration: none;
+
+      &:hover,
+      &:active {
+        border-radius: 5px;
+        background-color:  @color-white-opacity;
+      }
     }
     .header-menu-punkt__green {
       width: 130px;

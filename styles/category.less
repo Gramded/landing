@@ -37,13 +37,18 @@
     .who-we-block {
         width: 50%;
         margin: 110px auto 0;
-        background-color: @color-white;
+        padding-bottom: 35px;
         border-radius: 5px;
+        background-image: url("../images/clients/who-we-are.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+
         .who-we-block_h3 {
             font: @font-36-b;
             text-align: center;
             padding: 45px 0 25px;
         }
+
         .who-we-block_text {
             text-align: center;
             padding: 0px 12.5%;
@@ -54,6 +59,7 @@
 .extensions {
     #flex;
     #flex-direction;
+    box-shadow: 0px -8px 30px rgba(0, 0, 0, 0.13);
 
     .extensions-heading {
         font: @font-36;
@@ -62,12 +68,11 @@
     }
 
     .extensions-carousel {
-
-
         #flex;
         #justify-content(space-around);
         #flex-direction(row);
         margin-bottom: 65px;
+        padding: 0 7%;
 
         .extensions-carousel-lot__red {
             #extensions-carousel-lot(@color-red);

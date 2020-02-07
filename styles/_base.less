@@ -41,6 +41,8 @@
 @color-green: #7de321;
 @color-mint: #50e37b;
 @color-sky: #f6f9fc;
+@color-orange: #ff9417;
+@color-pink: #ff5fac;
 // Buttons
 
 @button-box-shadow: 0 2px 15px rgba(63, 64, 65, 0.21);
@@ -190,6 +192,63 @@
     display: inline-block;
     width: 82px;
     color: @color-purple;
+}
+
+#check_mark {
+    position: relative;
+    left: -35px;
+    display: inline-block;
+    content: "\2714";
+    width: 16px;
+    height: 16px;
+    margin-right: -22px;
+    border: 2px solid @color-green;
+    border-radius: 100px;
+    line-height: 16px;
+    font-size: 14px;
+    text-align: center;
+}
+
+#video-other-item (@color) {
+    display: block;
+    width: 270px;
+    height: 65px;
+    #mont-text(18px);
+    font-weight: bold;
+    text-align: left;
+    text-transform: uppercase;
+    color: @color;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    background-color: @color-sky;
+    transition: 0.5s;
+
+    &:hover {
+        box-shadow: 0 8px 40px rgba(0, 0, 0, 0.25);
+        transition: 0.5s;
+    }
+
+    p {
+        line-height: 65px;
+        padding-left: 25px;
+    }
+
+    &:after {
+        display: block;
+        position: relative;
+        left: 75%;
+        top: -62px;
+        margin-top: 2px;
+        width: 45px;
+        height: 45px;
+        text-align: center;
+        content: "\25b6";
+        font-size: 20px;
+        line-height: 45px;
+        color: @color;
+        border: 2px solid @color;
+        border-radius: 40px;
+    }
 }
 // Styles
 

@@ -15,6 +15,20 @@
   width: 82px;
   color: #725dec;
 }
+#check_mark {
+  position: relative;
+  left: -35px;
+  display: inline-block;
+  content: "\2714";
+  width: 16px;
+  height: 16px;
+  margin-right: -22px;
+  border: 2px solid #7de321;
+  border-radius: 100px;
+  line-height: 16px;
+  font-size: 14px;
+  text-align: center;
+}
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -95,7 +109,7 @@ body {
   -ms-justify-content: space-between;
   justify-content: space-between;
   -ms-flex-pack: space-between;
-  padding: 0 75px;
+  padding: 0 50px;
 }
 .header-block .header-menu {
   display: -webkit-flex;
@@ -105,11 +119,18 @@ body {
 .header-block .header-menu .header-menu-punkt,
 .header-block .header-menu .header-menu-punkt__green {
   display: block;
-  padding-top: 7px;
+  line-height: 23px;
   width: 100px;
   text-align: center;
   color: #fff;
   text-decoration: none;
+}
+.header-block .header-menu .header-menu-punkt:hover,
+.header-block .header-menu .header-menu-punkt__green:hover,
+.header-block .header-menu .header-menu-punkt:active,
+.header-block .header-menu .header-menu-punkt__green:active {
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 .header-block .header-menu .header-menu-punkt__green {
   width: 130px;
@@ -181,8 +202,11 @@ body {
 .banner-wrapper .who-we-block {
   width: 50%;
   margin: 110px auto 0;
-  background-color: #fff;
+  padding-bottom: 35px;
   border-radius: 5px;
+  background-image: url("../images/clients/who-we-are.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 .banner-wrapper .who-we-block .who-we-block_h3 {
   font: bold 36px Montserrat;
@@ -200,6 +224,7 @@ body {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  box-shadow: 0px -8px 30px rgba(0, 0, 0, 0.13);
 }
 .extensions .extensions-heading {
   font: 400 36px Montserrat;
@@ -219,6 +244,7 @@ body {
   -ms-flex-direction: row;
   flex-direction: row;
   margin-bottom: 65px;
+  padding: 0 7%;
 }
 .extensions .extensions-carousel .extensions-carousel-lot__red {
   display: flex;
