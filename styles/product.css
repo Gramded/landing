@@ -216,6 +216,7 @@ body {
   font: 400 16px Montserrat;
 }
 .banner-wrapper .product .product-rating .product-rating-dis .product-rating-reviews {
+  color: #fff;
   text-decoration: underline;
 }
 .banner-wrapper .product .product-dis {
@@ -234,6 +235,9 @@ body {
 .banner-wrapper .product .product-dis .product-dis-items {
   width: max-content;
   font: 400 16px Montserrat;
+}
+.banner-wrapper .product .product-dis .product-dis-items li {
+  margin-bottom: 5px;
 }
 .banner-wrapper .product .product-dis .product-dis-items li:before {
   content: '\26AB';
@@ -645,6 +649,7 @@ body {
   background-color: #7de321;
 }
 .feature .feature-btn {
+  text-align: center;
   width: 60px;
   margin: 0 auto;
 }
@@ -697,7 +702,7 @@ body {
 }
 .success_stories .success_stories-items .success_stories-items-item .stories-items-item-read .item-read-btn {
   opacity: 0;
-  width: 200px;
+  width: 190px;
   height: 60px;
   margin: 0 auto;
   padding: 15px 0;
@@ -720,7 +725,10 @@ body {
   margin: 0 10%;
 }
 .success_stories .success_stories-btn {
-  width: 335px;
+  width: 190px;
+  max-width: max-content;
+  min-width: max-content;
+  min-height: max-content;
   margin: 0 auto;
   padding: 20px 70px;
   text-align: center;
@@ -811,7 +819,10 @@ body {
   margin: 0 10%;
 }
 .user-reviews .user-reviews-btn {
-  width: 335px;
+  width: 190px;
+  max-width: max-content;
+  min-width: max-content;
+  min-height: max-content;
   margin: 0 auto;
   padding: 20px 70px;
   text-align: center;
@@ -921,5 +932,8 @@ body {
 }
 .get-product .get-product-buy .product-buy-container .product-buy-item .product-buy-month-prise {
   font: bold 36px Montserrat;
+}
+.get-product .get-product-buy .product-buy-container .get-product-buy-btn {
+  text-align: center;
 }
 /*# sourceMappingURL=product.css.map */

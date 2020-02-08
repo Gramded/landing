@@ -44,6 +44,7 @@
         font: @font-p16;
 
         .product-rating-reviews {
+          color: @color-white;
           text-decoration: underline;
         }
 
@@ -67,6 +68,10 @@
       .product-dis-items {
         width: max-content;
         font: @font-p16;
+
+        li {
+          margin-bottom: 5px;
+        }
 
         li:before {
           content: '\26AB';
@@ -331,6 +336,7 @@
   }
 
   .feature-btn {
+    text-align: center;
     width: 60px;
     margin: 0 auto;
   }
@@ -368,7 +374,7 @@
 
         .item-read-btn {
           opacity: 0;
-          width: 200px;
+          width: 190px;
           height: 60px;
           margin: 0 auto;
           padding: 15px 0;
@@ -400,7 +406,10 @@
   }
 
   .success_stories-btn {
-    width: 335px;
+    width: 190px;
+    max-width: max-content;
+    min-width: max-content;
+    min-height: max-content;
     margin: 0 auto;
     padding: 20px 70px;
     text-align: center;
@@ -474,7 +483,10 @@
   }
 
   .user-reviews-btn {
-    width: 335px;
+    width: 190px;
+    max-width: max-content;
+    min-width: max-content;
+    min-height: max-content;
     margin: 0 auto;
     padding: 20px 70px;
     text-align: center;
@@ -573,6 +585,10 @@
         .product-buy-month-prise {
           font: @font-36-b;
         }
+      }
+
+      .get-product-buy-btn {
+        text-align: center;
       }
     }
   }
