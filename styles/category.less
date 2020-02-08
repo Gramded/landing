@@ -43,6 +43,10 @@
         background-size: 100% 100%;
         background-repeat: no-repeat;
 
+        .OnMobile({
+            width: 98%;
+        });
+
         .who-we-block_h3 {
             font: @font-36-b;
             text-align: center;
@@ -73,6 +77,10 @@
         #flex-direction(row);
         margin-bottom: 65px;
         padding: 0 7%;
+
+        .OnMobile({
+            flex-direction: column;
+        });
 
         .extensions-carousel-lot__red {
             #extensions-carousel-lot(@color-red);
@@ -106,6 +114,10 @@
             width: 250px;
             height: 60px;
             #mont-text(17px);
+
+            .OnMobile({
+                width: 100%;
+            });
         }
 
         .carousel-lot-star {
@@ -139,22 +151,46 @@
     margin-top: 80px;
     margin-bottom: 50px;
 
+    .OnMobile({
+        margin-top: 40px;
+    });
+
     .why-h2 {
         text-align: center;
         font: @font-36;
         margin-bottom: 70px;
+
+        .OnMobile({
+            margin-bottom: 30px;
+        });
     }
 
     .why-item-place {
         #flex;
         #justify-content(space-around);
         margin: 0 15%;
+
+        .OnMobile({
+            flex-direction: column;
+            display: block;
+        });
     }
 
     .why-item {
         #flex;
         #flex-direction(column);
         width: 185px;
+
+        .OnMobile({
+            width: 120px;
+            margin-bottom: 15px;
+            display: inline-block;
+            height: 250px;
+
+            &:nth-child(even) {
+                margin-left: 10px;
+            }
+        });
 
         .why-item-img__1 {
             #why-item-img( url(../images/clients/why_img_1.svg) );

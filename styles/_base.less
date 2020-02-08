@@ -132,8 +132,9 @@
     background-color: @color;
 
     .OnMobile({
-    width: 20%;
-    })
+        width: 100%;
+        margin-bottom: 15px;
+    });
 
 }
 
@@ -151,6 +152,11 @@
         background-size: 80px;
         background-repeat: no-repeat;
         background-position: center;
+
+        .OnMobile({
+            width: 120px;
+            height: 120px;
+        });
 
 }
 
@@ -223,6 +229,10 @@
     border-radius: 5px;
     background-color: @color-sky;
     transition: 0.5s;
+
+    .OnMobile({
+        margin: 0 auto 15px;
+    });
 
     &:hover {
         color: @color-white;

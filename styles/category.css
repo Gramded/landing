@@ -111,6 +111,11 @@ body {
   -ms-flex-pack: space-between;
   padding: 0 50px;
 }
+@media screen and (max-width: 767px) {
+  .header-block {
+    display: none;
+  }
+}
 .header-block .header-menu {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -208,6 +213,11 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+@media screen and (max-width: 767px) {
+  .banner-wrapper .who-we-block {
+    width: 98%;
+  }
+}
 .banner-wrapper .who-we-block .who-we-block_h3 {
   font: bold 36px Montserrat;
   text-align: center;
@@ -246,6 +256,11 @@ body {
   margin-bottom: 65px;
   padding: 0 7%;
 }
+@media screen and (max-width: 767px) {
+  .extensions .extensions-carousel {
+    flex-direction: column;
+  }
+}
 .extensions .extensions-carousel .extensions-carousel-lot__red {
   display: flex;
   flex-direction: column;
@@ -260,7 +275,8 @@ body {
 }
 @media screen and (max-width: 767px) {
   .extensions .extensions-carousel .extensions-carousel-lot__red {
-    width: 20%;
+    width: 100%;
+    margin-bottom: 15px;
   }
 }
 .extensions .extensions-carousel .extensions-carousel-lot__blue {
@@ -277,7 +293,8 @@ body {
 }
 @media screen and (max-width: 767px) {
   .extensions .extensions-carousel .extensions-carousel-lot__blue {
-    width: 20%;
+    width: 100%;
+    margin-bottom: 15px;
   }
 }
 .extensions .extensions-carousel .extensions-carousel-lot__green {
@@ -294,7 +311,8 @@ body {
 }
 @media screen and (max-width: 767px) {
   .extensions .extensions-carousel .extensions-carousel-lot__green {
-    width: 20%;
+    width: 100%;
+    margin-bottom: 15px;
   }
 }
 .extensions .extensions-carousel .extensions-carousel-lot__yellow {
@@ -311,7 +329,8 @@ body {
 }
 @media screen and (max-width: 767px) {
   .extensions .extensions-carousel .extensions-carousel-lot__yellow {
-    width: 20%;
+    width: 100%;
+    margin-bottom: 15px;
   }
 }
 .extensions .extensions-carousel .extensions-carousel-lot-img {
@@ -331,6 +350,11 @@ body {
   width: 250px;
   height: 60px;
   font: 400 17px Montserrat;
+}
+@media screen and (max-width: 767px) {
+  .extensions .extensions-carousel .lot-text__17 {
+    width: 100%;
+  }
 }
 .extensions .extensions-carousel .carousel-lot-star {
   display: -webkit-flex;
@@ -370,10 +394,20 @@ body {
   margin-top: 80px;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 767px) {
+  .why-aitoc {
+    margin-top: 40px;
+  }
+}
 .why-aitoc .why-h2 {
   text-align: center;
   font: 400 36px Montserrat;
   margin-bottom: 70px;
+}
+@media screen and (max-width: 767px) {
+  .why-aitoc .why-h2 {
+    margin-bottom: 30px;
+  }
 }
 .why-aitoc .why-item-place {
   display: -webkit-flex;
@@ -386,6 +420,12 @@ body {
   -ms-flex-pack: space-around;
   margin: 0 15%;
 }
+@media screen and (max-width: 767px) {
+  .why-aitoc .why-item-place {
+    flex-direction: column;
+    display: block;
+  }
+}
 .why-aitoc .why-item {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -394,6 +434,17 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   width: 185px;
+}
+@media screen and (max-width: 767px) {
+  .why-aitoc .why-item {
+    width: 120px;
+    margin-bottom: 15px;
+    display: inline-block;
+    height: 250px;
+  }
+  .why-aitoc .why-item:nth-child(even) {
+    margin-left: 10px;
+  }
 }
 .why-aitoc .why-item .why-item-img__1 {
   width: 135px;
@@ -406,6 +457,12 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+@media screen and (max-width: 767px) {
+  .why-aitoc .why-item .why-item-img__1 {
+    width: 120px;
+    height: 120px;
+  }
+}
 .why-aitoc .why-item .why-item-img__2 {
   width: 135px;
   height: 135px;
@@ -416,6 +473,12 @@ body {
   background-size: 80px;
   background-repeat: no-repeat;
   background-position: center;
+}
+@media screen and (max-width: 767px) {
+  .why-aitoc .why-item .why-item-img__2 {
+    width: 120px;
+    height: 120px;
+  }
 }
 .why-aitoc .why-item .why-item-img__3 {
   width: 135px;
@@ -428,6 +491,12 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+@media screen and (max-width: 767px) {
+  .why-aitoc .why-item .why-item-img__3 {
+    width: 120px;
+    height: 120px;
+  }
+}
 .why-aitoc .why-item .why-item-img__4 {
   width: 135px;
   height: 135px;
@@ -438,6 +507,12 @@ body {
   background-size: 80px;
   background-repeat: no-repeat;
   background-position: center;
+}
+@media screen and (max-width: 767px) {
+  .why-aitoc .why-item .why-item-img__4 {
+    width: 120px;
+    height: 120px;
+  }
 }
 .why-aitoc .why-item .why-item-h2 {
   text-align: center;

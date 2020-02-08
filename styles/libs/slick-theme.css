@@ -145,6 +145,12 @@
     padding: 0;
     background-color: gray;
     cursor: pointer;
+
+}
+@media screen and (max-width: 767px) {
+    .slick-dots li {
+        width: auto;
+    }
 }
 .slick-dots li button
 {
