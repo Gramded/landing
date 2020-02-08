@@ -261,7 +261,7 @@ body {
   width: 300px;
   padding: 40px 35px 20px 45px;
   background-color: #fff;
-  box-shadow: inset 0px 8px 20px rgba(63, 64, 65, 0.21);
+  box-shadow: inset 0 8px 20px rgba(63, 64, 65, 0.21);
 }
 .banner-wrapper .product .product-buy .product-buy-item {
   font: 400 18px Montserrat;
@@ -378,7 +378,7 @@ body {
   width: 600px;
   height: 300px;
   margin: 0 auto 125px;
-  box-shadow: 0px 8px 20px rgba(63, 64, 65, 0.21);
+  box-shadow: 0 8px 20px rgba(63, 64, 65, 0.21);
 }
 .video .video-other {
   display: -webkit-flex;
@@ -391,6 +391,7 @@ body {
   -ms-flex-pack: center;
 }
 .video .video-other .video-other-item__purple {
+  cursor: pointer;
   display: block;
   width: 270px;
   height: 65px;
@@ -434,6 +435,7 @@ body {
   background: linear-gradient(270deg, #836EFF 13.04%, #B694FF 100%);
 }
 .video .video-other .video-other-item__orange {
+  cursor: pointer;
   display: block;
   width: 270px;
   height: 65px;
@@ -478,6 +480,7 @@ body {
   background: linear-gradient(270.52deg, #FF9417 0.98%, #FCCF32 99.95%);
 }
 .video .video-other .video-other-item__pink {
+  cursor: pointer;
   display: block;
   width: 270px;
   height: 65px;
@@ -649,6 +652,7 @@ body {
   background-color: #7de321;
 }
 .feature .feature-btn {
+  cursor: pointer;
   text-align: center;
   width: 60px;
   margin: 0 auto;
@@ -725,6 +729,7 @@ body {
   margin: 0 10%;
 }
 .success_stories .success_stories-btn {
+  cursor: pointer;
   width: 190px;
   max-width: max-content;
   min-width: max-content;
@@ -734,7 +739,7 @@ body {
   text-align: center;
   font: 400 24px Montserrat;
   background-color: #fff;
-  box-shadow: 0px 2px 15px rgba(63, 64, 65, 0.21);
+  box-shadow: 0 2px 15px rgba(63, 64, 65, 0.21);
   border-radius: 5px;
 }
 .user-reviews {
@@ -779,7 +784,7 @@ body {
   transition: 0.5s;
 }
 .user-reviews .reviews-users .reviews-users-user:hover {
-  box-shadow: 0px 2px 15px rgba(63, 64, 65, 0.21);
+  box-shadow: 0 2px 15px rgba(63, 64, 65, 0.21);
   transition: 0.5s;
 }
 .user-reviews .reviews-users .reviews-users-user .users-user1-img {
@@ -819,6 +824,7 @@ body {
   margin: 0 10%;
 }
 .user-reviews .user-reviews-btn {
+  cursor: pointer;
   width: 190px;
   max-width: max-content;
   min-width: max-content;
@@ -828,7 +834,7 @@ body {
   text-align: center;
   font: 400 24px Montserrat;
   background-color: #fff;
-  box-shadow: 0px 2px 15px rgba(63, 64, 65, 0.21);
+  box-shadow: 0 2px 15px rgba(63, 64, 65, 0.21);
   border-radius: 5px;
 }
 .get-product {
@@ -934,6 +940,7 @@ body {
   font: bold 36px Montserrat;
 }
 .get-product .get-product-buy .product-buy-container .get-product-buy-btn {
+  cursor: pointer;
   text-align: center;
 }
 /*# sourceMappingURL=product.css.map */
