@@ -28,6 +28,7 @@
             max-width: 100%;
             width: 100%;
         }
+
     }
 
     .slick-slide {
@@ -37,10 +38,9 @@
     .who-we-block {
         width: 50%;
         margin: 110px auto 0;
-        padding-bottom: 35px;
         border-radius: 5px;
         background-image: url("../images/clients/who-we-are.png");
-        background-size: 100% 100%;
+        background-size: 100% 110%;
         background-repeat: no-repeat;
 
         .OnMobile({
@@ -55,7 +55,7 @@
 
         .who-we-block_text {
             text-align: center;
-            padding: 0 12.5%;
+            padding: 0 12.5% 35px;
         }
     }
 }
@@ -79,7 +79,7 @@
         padding: 0 7%;
 
         .OnMobile({
-            flex-direction: column;
+            padding: 0 15px;
         });
 
         .extensions-carousel-lot__red {
@@ -104,14 +104,14 @@
 
         .lot-text {
             display: block;
-            width: 250px;
+            width: 100%;
             height: 60px;
             #mont-text(22px);
         }
 
         .lot-text__17 {
             display: block;
-            width: 250px;
+            width: 100%;
             height: 60px;
             #mont-text(17px);
 
@@ -168,11 +168,13 @@
     .why-item-place {
         #flex;
         #justify-content(space-around);
-        margin: 0 15%;
+        margin: 0 10%;
 
         .OnMobile({
-            flex-direction: column;
-            display: block;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 2vw;
         });
     }
 
@@ -183,13 +185,10 @@
 
         .OnMobile({
             width: 120px;
-            margin-bottom: 15px;
-            display: inline-block;
+            margin: 0 auto 15px;
+            display: block;
             height: 250px;
 
-            &:nth-child(even) {
-                margin-left: 10px;
-            }
         });
 
         .why-item-img__1 {

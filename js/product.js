@@ -7,21 +7,13 @@ $(function () {
     });
 });
 
-
-$(function () {
-
-    $(".rateyo").rateYo({
-
-    });
-
-});
 (function () {
     const $ = jQuery;
 
 
     $( document ).ready(function() {
         $('.responsive').slick({
-            dots: true,
+            dots: false,
             infinite: false,
             speed: 300,
             slidesToShow: 4,
@@ -33,7 +25,7 @@ $(function () {
                         slidesToShow: 3,
                         slidesToScroll: 3,
                         infinite: true,
-                        dots: true
+                        dots: false
                     }
                 },
                 {

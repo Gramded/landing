@@ -224,6 +224,10 @@
     margin: 0 auto;
     padding-bottom: 60px;
 
+    .slick-dots {
+      display: none;
+    }
+
     .OnMobile({
       width: 100%;
     });
@@ -253,7 +257,7 @@
 .video {
   #flex;
   #flex-direction();
-  padding: 73px 10% 60px;
+  padding: 73px 5% 60px;
   background-color: @color-sky;
   background-image: url("../images/clients/video-back.svg");
   background-position: center;
@@ -281,7 +285,7 @@
 
   .video-other {
     #flex;
-    #justify-content(center);
+    #justify-content(space-around);
 
     .OnMobile({
     #flex-direction();
@@ -297,7 +301,7 @@
 
     .video-other-item__orange {
       #video-other-item(@color-orange);
-      margin: 0 10%;
+      margin: 0 15px;
 
       &:hover {
         background: linear-gradient(270.52deg, #FF9417 0.98%, #FCCF32 99.95%);
@@ -323,7 +327,7 @@
   .feature-two {
     #flex;
     #justify-content(center);
-    padding: 60px 100px 20px;
+    padding: 60px 5% 20px;
     background-color: @color-white;
 
     .OnMobile({
@@ -366,8 +370,8 @@
     }
 
     .feature-two-img {
-      min-width: 535px;
-      height: 400px;
+      min-width: 50%;
+      height: auto;
 
       .OnMobile({
       min-width: 100%;
@@ -379,7 +383,7 @@
   .feature-three {
     #flex;
     #justify-content(center);
-    padding: 60px 100px 20px;
+    padding: 60px 5% 20px;
     margin-bottom: 70px;
 
     .OnMobile({
@@ -389,12 +393,13 @@
     });
 
     .feature-three-img {
-      margin-right: 100px;
-      min-width: 535px;
-      height: 400px;
+      margin-right: 5%;
+      min-width: 50%;
+      height: auto;
 
       .OnMobile({
         min-width: 100%;
+        margin-bottom: 20px;
       });
 
     }
@@ -417,7 +422,7 @@
 
       .three-dis-list {
         list-style: none;
-        width: 85%;
+        width: 100%;
 
         .three-dis-list-item {
           font: @font-p16;
@@ -568,7 +573,7 @@
       #flex;
       #flex-direction();
       width: 320px;
-      height: 480px;
+      height: max-content;
       padding: 35px;
       box-sizing: border-box;
       border: 1px solid #dddfe0;
@@ -648,7 +653,7 @@
     border-radius: 5px;
 
     .OnMobile({
-      flex-direction: column;
+      display: block;
       width: 90%;
       box-sizing: border-box;
       padding: 45px 10px 30px;
@@ -657,9 +662,19 @@
 
     .product-banner-h {
         margin-right: 30px;
+
+      .OnMobile({
+        display: inline-block;
+        width: auto;
+        max-width: max-content;
+      });
       .product-banner-h-name {
         font: @font-36;
         padding-bottom: 25px;
+
+        .OnMobile({
+        width: 99%;
+        })
       }
 
       .product-banner-h-trial {
@@ -676,9 +691,11 @@
   .product-banner-info {
     background-color: @color-sky;
 
-    .OnMobile({
-    width: 100%;
-    });
+      .OnMobile({
+        display: inline-block;
+        width: max-content;
+        min-width: max-content;
+      });
 
     .banner-info-free {
       margin-bottom: 15px;
@@ -734,13 +751,18 @@
 
       .OnMobile({
       #flex;
-      #flex-direction();
+        justify-content: space-around;
+        width: 85%;
       });
 
       .product-buy-item {
         #mont-text(18px);
         padding-top: 5px;
         margin-right: 15px;
+
+        .OnMobile({
+        width: 100%;
+        });
 
         .product-buy-month-prise {
           font: @font-36-b;
@@ -750,6 +772,10 @@
       .get-product-buy-btn {
         cursor: pointer;
         text-align: center;
+
+        .OnMobile({
+        line-height: 69px;
+        })
       }
     }
   }
